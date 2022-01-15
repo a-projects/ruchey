@@ -10,11 +10,10 @@
 
 **Рис 1: Русская (инженерная, кириллица)**
 
-![RUCHEY_C](https://user-images.githubusercontent.com/38563625/149588785-e7b11a84-da93-4972-8607-1611e917558b.png)
+
 
 **Рис 2: Русская (инженерная, латиница)**
 
-![RUCHEY_L](https://user-images.githubusercontent.com/38563625/149588774-39c63e67-02ac-45c0-b868-60730cd73a3a.png)
 
 # Зачем использовать
 * 
