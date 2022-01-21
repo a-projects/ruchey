@@ -1,64 +1,40 @@
 // Russian engineering Latin keyboard layout (Ручей).
 // Based on the English standard keyboard layout.
-// Andrey Baryshkin <baryshkin_aa@codeblast.ru>.
-// Last changes 2022/01/08.
+// Baryshkin Andrey <baryshkin_aa@codeblast.ru>.
+// Last changes 2022/01/20.
 partial alphanumeric_keys
 xkb_symbols "ruchey_latin" {
 
     name[Group1]= "Russian (Engineering, Latin)";
 
-    key <TLDE> { [ NoSymbol,   NoSymbol,          U20BD ] };
-    key <AE01> { [        1,    exclam ,     numerosign ] };
-    key <AE02> { [        2,      grave,             at ] };
-    key <AE03> { [        3,   quotedbl,     numbersign ] };
-    key <AE04> { [        4, apostrophe,         dollar ] };
-    key <AE05> { [        5,  semicolon,        percent ] };
-    key <AE06> { [        6,      colon,    asciicircum ] };
-    key <AE07> { [        7,   question,      ampersand ] };
-    key <AE08> { [        8,   asterisk,     asciitilde ] };
-    key <AE09> { [        9,  parenleft,  guillemotleft ] };
-    key <AE10> { [        0, parenright, guillemotright ] };
-    key <AE11> { [    minus, underscore,       NoSymbol ] };
-    key <AE12> { [    equal,       plus,       NoSymbol ] };
+    include "us(basic)"
 
-    key <AD01> { [        q,          Q,       NoSymbol ] };
-    key <AD02> { [        w,          W,       NoSymbol ] };
-    key <AD03> { [        e,          E,       NoSymbol ] };
-    key <AD04> { [        r,          R,       NoSymbol ] };
-    key <AD05> { [        t,          T,       NoSymbol ] };
-    key <AD06> { [        y,          Y,       NoSymbol ] };
-    key <AD07> { [        u,          U,       NoSymbol ] };
-    key <AD08> { [        i,          I,       NoSymbol ] };
-    key <AD09> { [        o,          O,       NoSymbol ] };
-    key <AD10> { [        p,          P,       NoSymbol ] };
-    key <AD11> { [ NoSymbol,   NoSymbol,    bracketleft ] };
-    key <AD12> { [ NoSymbol,   NoSymbol,   bracketright ] };
+    key <TLDE> { [ VoidSymbol,   VoidSymbol,          U20BD ] };
+    key <AE01> { [          1,       exclam,     numerosign ] };
+    key <AE02> { [          2,        grave,             at ] };
+    key <AE03> { [          3,   apostrophe,     numbersign ] };
+    key <AE04> { [          4,     quotedbl,         dollar ] };
+    key <AE05> { [          5,    semicolon,        percent ] };
+    key <AE06> { [          6,        colon,    asciicircum ] };
+    key <AE07> { [          7,     question,      ampersand ] };
+    key <AE08> { [          8,     asterisk,     asciitilde ] };
+    key <AE09> { [          9,    parenleft,  guillemotleft ] };
+    key <AE10> { [          0,   parenright, guillemotright ] };
+    key <AE11> { [      minus,   underscore,     VoidSymbol ] };
+    key <AE12> { [      equal,         plus,     VoidSymbol ] };
 
-    key <AC01> { [        a,          A,       NoSymbol ] };
-    key <AC02> { [        s,          S,       NoSymbol ] };
-    key <AC03> { [        d,          D,       NoSymbol ] };
-    key <AC04> { [        f,          F,       NoSymbol ] };
-    key <AC05> { [        g,          G,       NoSymbol ] };
-    key <AC06> { [        h,          H,       NoSymbol ] };
-    key <AC07> { [        j,          J,       NoSymbol ] };
-    key <AC08> { [        k,          K,       NoSymbol ] };
-    key <AC09> { [        l,          L,       NoSymbol ] };
-    key <AC10> { [ NoSymbol,   NoSymbol,      braceleft ] };
-    key <AC11> { [ NoSymbol,   NoSymbol,     braceright ] };
+    key <AD11> { [ VoidSymbol,   VoidSymbol,    bracketleft ] };
+    key <AD12> { [ VoidSymbol,   VoidSymbol,   bracketright ] };
 
-    key <AB01> { [        z,          Z,       NoSymbol ] };
-    key <AB02> { [        x,          X,       NoSymbol ] };
-    key <AB03> { [        c,          C,       NoSymbol ] };
-    key <AB04> { [        v,          V,       NoSymbol ] };
-    key <AB05> { [        b,          B,       NoSymbol ] };
-    key <AB06> { [        n,          N,       NoSymbol ] };
-    key <AB07> { [        m,          M,       NoSymbol ] };
-    key <AB08> { [ NoSymbol,   NoSymbol,           less ] };
-    key <AB09> { [ NoSymbol,   NoSymbol,        greater ] };
-    key <AB10> { [   period,      comma,       NoSymbol ] };
+    key <AC10> { [ VoidSymbol,   VoidSymbol,      braceleft ] };
+    key <AC11> { [ VoidSymbol,   VoidSymbol,     braceright ] };
 
-    key <BKSL> { [    slash,  backslash,            bar ] };
-    key <LSGT> { [    slash,  backslash,            bar ] };
+    key <AB08> { [ VoidSymbol,   VoidSymbol,           less ] };
+    key <AB09> { [ VoidSymbol,   VoidSymbol,        greater ] };
+    key <AB10> { [     period,        comma,     VoidSymbol ] };
+
+    key <BKSL> { [      slash,    backslash,            bar ] };
+    key <LSGT> { [      slash,    backslash,            bar ] };
 
     include "kpdl(dot)"
 };
