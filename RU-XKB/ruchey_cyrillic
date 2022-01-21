@@ -23,11 +23,11 @@ xkb_symbols "ruchey_cyrillic" {
     key <AE11> { [             minus,        underscore,     VoidSymbol ] };
     key <AE12> { [             equal,              plus,     VoidSymbol ] };
 
-    key <AD11> { [       Cyrillic_ha,       Cyrillic_HA,    bracketleft ] };
-    key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN,   bracketright ] };
+    key <AD11> { [       Cyrillic_ha,       Cyrillic_HA,      braceleft ] };
+    key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN,     braceright ] };
 
-    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE,      braceleft ] };
-    key <AC11> { [        Cyrillic_e,        Cyrillic_E,     braceright ] };
+    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE,    bracketleft ] };
+    key <AC11> { [        Cyrillic_e,        Cyrillic_E,   bracketright ] };
 
     key <AB08> { [       Cyrillic_be,       Cyrillic_BE,           less ] };
     key <AB09> { [       Cyrillic_yu,       Cyrillic_YU,        greater ] };

@@ -23,11 +23,11 @@ xkb_symbols "ruchey_latin" {
     key <AE11> { [      minus,   underscore,     VoidSymbol ] };
     key <AE12> { [      equal,         plus,     VoidSymbol ] };
 
-    key <AD11> { [ VoidSymbol,   VoidSymbol,    bracketleft ] };
-    key <AD12> { [ VoidSymbol,   VoidSymbol,   bracketright ] };
+    key <AD11> { [ VoidSymbol,   VoidSymbol,      braceleft ] };
+    key <AD12> { [ VoidSymbol,   VoidSymbol,     braceright ] };
 
-    key <AC10> { [ VoidSymbol,   VoidSymbol,      braceleft ] };
-    key <AC11> { [ VoidSymbol,   VoidSymbol,     braceright ] };
+    key <AC10> { [ VoidSymbol,   VoidSymbol,    bracketleft ] };
+    key <AC11> { [ VoidSymbol,   VoidSymbol,   bracketright ] };
 
     key <AB08> { [ VoidSymbol,   VoidSymbol,           less ] };
     key <AB09> { [ VoidSymbol,   VoidSymbol,        greater ] };
