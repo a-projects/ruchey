@@ -1,0 +1,21 @@
+--- /usr/share/X11/xkb/rules/evdev.xml	2022-01-27 09:58:59.832544483 +0300
++++ xkb/rules/evdev.xml	2022-01-27 09:58:49.512434265 +0300
+@@ -4747,6 +4747,18 @@
+             <description>Russian (phonetic, French)</description>
+           </configItem>
+         </variant>
++        <variant>
++          <configItem>
++            <name>ruchey_cyrillic</name>
++            <description>Russian (Engineering, Cyrillic)</description>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>ruchey_latin</name>
++            <description>Russian (Engineering, Latin)</description>
++          </configItem>
++        </variant>
+       </variantList>
+     </layout>
+     <layout>

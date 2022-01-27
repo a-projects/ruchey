@@ -1,0 +1,21 @@
+--- /usr/share/X11/xkb/rules/base.xml	2022-01-27 09:57:24.851523306 +0300
++++ xkb/rules/base.xml	2022-01-27 09:57:10.679369510 +0300
+@@ -4741,6 +4741,18 @@
+             <description>Russian (phonetic, French)</description>
+           </configItem>
+         </variant>
++        <variant>
++          <configItem>
++            <name>ruchey_cyrillic</name>
++            <description>Russian (Engineering, Cyrillic)</description>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>ruchey_latin</name>
++            <description>Russian (Engineering, Latin)</description>
++          </configItem>
++        </variant>
+       </variantList>
+     </layout>
+     <layout>
