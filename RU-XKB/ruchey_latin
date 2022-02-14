@@ -9,12 +9,12 @@ xkb_symbols "ruchey_latin" {
 
     include "us(basic)"
 
-    key <TLDE> { [ VoidSymbol,   VoidSymbol,          U20BD ] };
-    key <AE01> { [          1,       exclam,     numerosign ] };
-    key <AE02> { [          2,        grave,             at ] };
-    key <AE03> { [          3,   apostrophe,     numbersign ] };
-    key <AE04> { [          4,     quotedbl,         dollar ] };
-    key <AE05> { [          5,    semicolon,        percent ] };
+    key <TLDE> { [ VoidSymbol,   VoidSymbol,     VoidSymbol ] };
+    key <AE01> { [          1,       exclam,          U20BD ] };
+    key <AE02> { [          2,   apostrophe,             at ] };
+    key <AE03> { [          3,   numerosign,     numbersign ] };
+    key <AE04> { [          4,    semicolon,         dollar ] };
+    key <AE05> { [          5,     quotedbl,        percent ] };
     key <AE06> { [          6,        colon,    asciicircum ] };
     key <AE07> { [          7,     question,      ampersand ] };
     key <AE08> { [          8,     asterisk,     asciitilde ] };
@@ -31,7 +31,7 @@ xkb_symbols "ruchey_latin" {
 
     key <AB08> { [ VoidSymbol,   VoidSymbol,           less ] };
     key <AB09> { [ VoidSymbol,   VoidSymbol,        greater ] };
-    key <AB10> { [     period,        comma,     VoidSymbol ] };
+    key <AB10> { [     period,        comma,          grave ] };
 
     key <BKSL> { [      slash,    backslash,            bar ] };
     key <LSGT> { [      slash,    backslash,            bar ] };
