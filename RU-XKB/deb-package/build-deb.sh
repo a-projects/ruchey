@@ -21,46 +21,46 @@ cp -f patches/* $PACKAGE/usr/local/share/ruchey
 cat > $PACKAGE/usr/local/share/ruchey/xkb-patch << EOF
 #!/bin/bash
 if ! grep -q 'ruchey' /usr/share/X11/xkb/symbols/ru; then
-  /usr/bin/patch -us /usr/share/X11/xkb/symbols/ru < /usr/share/ruchey/ru.patch
+  /usr/bin/patch -us /usr/share/X11/xkb/symbols/ru < /usr/local/share/ruchey/ru.patch
 fi
 
 if ! grep -q 'ruchey' /usr/share/X11/xkb/rules/base.lst; then
-  /usr/bin/patch -us /usr/share/X11/xkb/rules/base.lst < /usr/share/ruchey/base.lst.patch
+  /usr/bin/patch -us /usr/share/X11/xkb/rules/base.lst < /usr/local/share/ruchey/base.lst.patch
 fi
 
 if ! grep -q 'ruchey' /usr/share/X11/xkb/rules/base.xml; then
-  /usr/bin/patch -us /usr/share/X11/xkb/rules/base.xml < /usr/share/ruchey/base.xml.patch
+  /usr/bin/patch -us /usr/share/X11/xkb/rules/base.xml < /usr/local/share/ruchey/base.xml.patch
 fi
 
 if ! grep -q 'ruchey' /usr/share/X11/xkb/rules/evdev.lst; then
-  /usr/bin/patch -us /usr/share/X11/xkb/rules/evdev.lst < /usr/share/ruchey/evdev.lst.patch
+  /usr/bin/patch -us /usr/share/X11/xkb/rules/evdev.lst < /usr/local/share/ruchey/evdev.lst.patch
 fi
 
 if ! grep -q 'ruchey' /usr/share/X11/xkb/rules/evdev.xml; then
-  /usr/bin/patch -us /usr/share/X11/xkb/rules/evdev.xml < /usr/share/ruchey/evdev.xml.patch
+  /usr/bin/patch -us /usr/share/X11/xkb/rules/evdev.xml < /usr/local/share/ruchey/evdev.xml.patch
 fi
 EOF
 
 cat > $PACKAGE/usr/local/share/ruchey/xkb-unpatch << EOF
 #!/bin/bash
 if grep -q 'ruchey' /usr/share/X11/xkb/symbols/ru; then
-  /usr/bin/patch -usR /usr/share/X11/xkb/symbols/ru < /usr/share/ruchey/ru.patch
+  /usr/bin/patch -usR /usr/share/X11/xkb/symbols/ru < /usr/local/share/ruchey/ru.patch
 fi
 
 if grep -q 'ruchey' /usr/share/X11/xkb/rules/base.lst; then
-  /usr/bin/patch -usR /usr/share/X11/xkb/rules/base.lst < /usr/share/ruchey/base.lst.patch
+  /usr/bin/patch -usR /usr/share/X11/xkb/rules/base.lst < /usr/local/share/ruchey/base.lst.patch
 fi
 
 if grep -q 'ruchey' /usr/share/X11/xkb/rules/base.xml; then
-  /usr/bin/patch -usR /usr/share/X11/xkb/rules/base.xml < /usr/share/ruchey/base.xml.patch
+  /usr/bin/patch -usR /usr/share/X11/xkb/rules/base.xml < /usr/local/share/ruchey/base.xml.patch
 fi
 
 if grep -q 'ruchey' /usr/share/X11/xkb/rules/evdev.lst; then
-  /usr/bin/patch -usR /usr/share/X11/xkb/rules/evdev.lst < /usr/share/ruchey/evdev.lst.patch
+  /usr/bin/patch -usR /usr/share/X11/xkb/rules/evdev.lst < /usr/local/share/ruchey/evdev.lst.patch
 fi
 
 if grep -q 'ruchey' /usr/share/X11/xkb/rules/evdev.xml; then
-  /usr/bin/patch -usR /usr/share/X11/xkb/rules/evdev.xml < /usr/share/ruchey/evdev.xml.patch
+  /usr/bin/patch -usR /usr/share/X11/xkb/rules/evdev.xml < /usr/local/share/ruchey/evdev.xml.patch
 fi
 EOF
 
