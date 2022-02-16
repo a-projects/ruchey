@@ -48,7 +48,7 @@ BACKSPACE="guess"
 Где "grp:caps_toggle" - это метод переключения, а "lv3:ralt_switch" - это использование клавиши AltGr (правый Alt) для третьего уровня.
 Методы переключения можно посмотреть командой <code>localectl list-x11-keymap-options</code>.
 
-После изменения файла выполнить команду <code>update-initramfs -u</code>, в Debian/Ubuntu лучше выполнить <code>dpkg-reconfigure -phigh console-setup</code>.
+После изменения файла выполнить команду: <code>update-initramfs -u</code>. В Debian/Ubuntu лучше выполнить: <code>dpkg-reconfigure -phigh console-setup</code>.
 
 #### Для применения раскладок в initramfs
 Необходимо изменить файл: "_/etc/initramfs-tools/initramfs.conf_":
