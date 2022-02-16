@@ -45,7 +45,7 @@ XKBOPTIONS="grp:caps_toggle,lv3:ralt_switch,grp_led:scroll"
 BACKSPACE="guess"
 </pre>
 
-Где "grp:caps_toggle" - это метод переключения, а "lv3:ralt_switch" - это использование клавиши AltGr для третьего уровня.
+Где "grp:caps_toggle" - это метод переключения, а "lv3:ralt_switch" - это использование клавиши AltGr (правый Alt) для третьего уровня.
 Методы переключения можно посмотреть командой <code>localectl list-x11-keymap-options</code>.
 
 После изменения файла выполнить команду <code>update-initramfs -u</code>, в Debian/Ubuntu лучше выполнить <code>dpkg-reconfigure -phigh console-setup</code>.
