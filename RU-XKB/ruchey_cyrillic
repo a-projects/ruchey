@@ -1,7 +1,8 @@
-// Russian engineering Cyrillic keyboard layout (Ручей).
-// Based on the Russian standard keyboard layout.
-// Baryshkin Andrey <baryshkin_aa@codeblast.ru>.
-// Last changes 2022/01/20.
+// Russian engineering Cyrillic keyboard layout (Ручей)
+// Based on the Russian standard keyboard layout
+// Baryshkin Andrey <baryshkin_aa@codeblast.ru>
+// Last changes 2022/02/16
+// Version 1.2
 partial alphanumeric_keys
 xkb_symbols "ruchey_cyrillic" {
 
@@ -9,7 +10,7 @@ xkb_symbols "ruchey_cyrillic" {
 
     include "ru(common)"
 
-    key <TLDE> { [       Cyrillic_io,       Cyrillic_IO,     VoidSymbol ] };
+    key <TLDE> { [       Cyrillic_io,       Cyrillic_IO,          U00A7 ] };
     key <AE01> { [                 1,            exclam,          U20BD ] };
     key <AE02> { [                 2,        apostrophe,             at ] };
     key <AE03> { [                 3,        numerosign,     numbersign ] };
