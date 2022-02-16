@@ -33,9 +33,10 @@
 [Ограничения и решение проблем](https://github.com/A-Projects/Ruchey/wiki/%D0%9E%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC)
 
 # Установка и настройка в Linux
-В Linux раскладки будут доступны из коробки, начиная с пакета **xkeyboard-config-2.36**. Для установки в Debian 12 и ниже, Ubuntu 21.10 и ниже  достаточно установить пакет **xkb-ruchey_<version>_all.deb**. Для ранних версий Linux используется автоматический патчер, который добавляет раскладку даже после обновления пакета XKB.
+В Linux раскладки будут доступны из коробки, начиная с пакета **xkeyboard-config-2.36**. Для установки в Debian 12 и ниже, Ubuntu 21.10 и ниже  достаточно установить пакет **xkb-ruchey_\<version\>_all.deb**. Для ранних версий Linux используется автоматический патчер, который добавляет раскладку даже после обновления пакета XKB.
 
-Для применения раскладок в консоли необходимо изменить файл: "/etc/default/keyboard"
+#### Для применения раскладок в консоли 
+Необходимо изменить файл "_/etc/default/keyboard_":
 <pre>
 XKBMODEL="pc104"
 XKBLAYOUT="ru,ru"
@@ -43,10 +44,16 @@ XKBVARIANT="ruchey_latin,ruchey_cyrillic"
 XKBOPTIONS="grp:caps_toggle,lv3:ralt_switch,grp_led:scroll"
 BACKSPACE="guess"
 </pre>
-Выполнить команду: "dpkg-reconfigure -phigh console-setup" или "update-initramfs -u"
 
-Для применения раскладок в initramfs необходимо изменить файл: "/etc/initramfs-tools/initramfs.conf"
+Где "grp:caps_toggle" - это метод переключения, а "lv3:ralt_switch" - это использование клавиши AltGr для третьего уровня.
+Методы переключения можно посмотреть командой <code>localectl list-x11-keymap-options</code>.
+
+После изменения файла выполнить команду <code>update-initramfs -u</code>, в Debian/Ubuntu лучше выполнить <code>dpkg-reconfigure -phigh console-setup</code>.
+
+#### Для применения раскладок в initramfs
+Необходимо изменить файл: "_/etc/initramfs-tools/initramfs.conf_":
 <pre>
 KEYMAP=y
 </pre>
-Выполнить команду: "update-initramfs -u"
+
+После изменения файла выполнить команду: <code>update-initramfs -u</code>
