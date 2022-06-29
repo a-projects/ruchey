@@ -16,32 +16,32 @@
 +
 +    include "us(basic)"
 +
-+    key <TLDE> { [ VoidSymbol,   VoidSymbol,          U00A7 ] };
-+    key <AE01> { [          1,       exclam,          U20BD ] };
-+    key <AE02> { [          2,   apostrophe,             at ] };
-+    key <AE03> { [          3,   numerosign,     numbersign ] };
-+    key <AE04> { [          4,    semicolon,         dollar ] };
-+    key <AE05> { [          5,     quotedbl,        percent ] };
-+    key <AE06> { [          6,        colon,    asciicircum ] };
-+    key <AE07> { [          7,     question,      ampersand ] };
-+    key <AE08> { [          8,     asterisk,     asciitilde ] };
-+    key <AE09> { [          9,    parenleft,  guillemotleft ] };
-+    key <AE10> { [          0,   parenright, guillemotright ] };
-+    key <AE11> { [      minus,   underscore,     VoidSymbol ] };
-+    key <AE12> { [      equal,         plus,     VoidSymbol ] };
++    key <TLDE> { [ VoidSymbol,   VoidSymbol,          U00A7,      U0301 ] };
++    key <AE01> { [          1,       exclam,          U20BD, VoidSymbol ] };
++    key <AE02> { [          2,   apostrophe,             at, VoidSymbol ] };
++    key <AE03> { [          3,   numerosign,     numbersign, VoidSymbol ] };
++    key <AE04> { [          4,    semicolon,         dollar, VoidSymbol ] };
++    key <AE05> { [          5,     quotedbl,        percent, VoidSymbol ] };
++    key <AE06> { [          6,        colon,    asciicircum, VoidSymbol ] };
++    key <AE07> { [          7,     question,      ampersand, VoidSymbol ] };
++    key <AE08> { [          8,     asterisk,     asciitilde, VoidSymbol ] };
++    key <AE09> { [          9,    parenleft,  guillemotleft, VoidSymbol ] };
++    key <AE10> { [          0,   parenright, guillemotright, VoidSymbol ] };
++    key <AE11> { [      minus,   underscore,     VoidSymbol, VoidSymbol ] };
++    key <AE12> { [      equal,         plus,     VoidSymbol, VoidSymbol ] };
 +
-+    key <AD11> { [ VoidSymbol,   VoidSymbol,      braceleft ] };
-+    key <AD12> { [ VoidSymbol,   VoidSymbol,     braceright ] };
++    key <AD11> { [ VoidSymbol,   VoidSymbol,      braceleft, VoidSymbol ] };
++    key <AD12> { [ VoidSymbol,   VoidSymbol,     braceright, VoidSymbol ] };
 +
-+    key <AC10> { [ VoidSymbol,   VoidSymbol,    bracketleft ] };
-+    key <AC11> { [ VoidSymbol,   VoidSymbol,   bracketright ] };
++    key <AC10> { [ VoidSymbol,   VoidSymbol,    bracketleft, VoidSymbol ] };
++    key <AC11> { [ VoidSymbol,   VoidSymbol,   bracketright, VoidSymbol ] };
 +
-+    key <AB08> { [ VoidSymbol,   VoidSymbol,           less ] };
-+    key <AB09> { [ VoidSymbol,   VoidSymbol,        greater ] };
-+    key <AB10> { [     period,        comma,          grave ] };
++    key <AB08> { [ VoidSymbol,   VoidSymbol,           less, VoidSymbol ] };
++    key <AB09> { [ VoidSymbol,   VoidSymbol,        greater, VoidSymbol ] };
++    key <AB10> { [     period,        comma,          grave, VoidSymbol ] };
 +
-+    key <BKSL> { [      slash,    backslash,            bar ] };
-+    key <LSGT> { [      slash,    backslash,            bar ] };
++    key <BKSL> { [      slash,    backslash,            bar, VoidSymbol ] };
++    key <LSGT> { [      slash,    backslash,            bar, VoidSymbol ] };
 +
 +    include "kpdl(dot)"
 +};
@@ -58,32 +58,32 @@
 +
 +    include "ru(common)"
 +
-+    key <TLDE> { [       Cyrillic_io,       Cyrillic_IO,          U00A7 ] };
-+    key <AE01> { [                 1,            exclam,          U20BD ] };
-+    key <AE02> { [                 2,        apostrophe,             at ] };
-+    key <AE03> { [                 3,        numerosign,     numbersign ] };
-+    key <AE04> { [                 4,         semicolon,         dollar ] };
-+    key <AE05> { [                 5,          quotedbl,        percent ] };
-+    key <AE06> { [                 6,             colon,    asciicircum ] };
-+    key <AE07> { [                 7,          question,      ampersand ] };
-+    key <AE08> { [                 8,          asterisk,     asciitilde ] };
-+    key <AE09> { [                 9,         parenleft,  guillemotleft ] };
-+    key <AE10> { [                 0,        parenright, guillemotright ] };
-+    key <AE11> { [             minus,        underscore,     VoidSymbol ] };
-+    key <AE12> { [             equal,              plus,     VoidSymbol ] };
++    key <TLDE> { [       Cyrillic_io,       Cyrillic_IO,          U00A7,      U0301 ] };
++    key <AE01> { [                 1,            exclam,          U20BD, VoidSymbol ] };
++    key <AE02> { [                 2,        apostrophe,             at, VoidSymbol ] };
++    key <AE03> { [                 3,        numerosign,     numbersign, VoidSymbol ] };
++    key <AE04> { [                 4,         semicolon,         dollar, VoidSymbol ] };
++    key <AE05> { [                 5,          quotedbl,        percent, VoidSymbol ] };
++    key <AE06> { [                 6,             colon,    asciicircum, VoidSymbol ] };
++    key <AE07> { [                 7,          question,      ampersand, VoidSymbol ] };
++    key <AE08> { [                 8,          asterisk,     asciitilde, VoidSymbol ] };
++    key <AE09> { [                 9,         parenleft,  guillemotleft, VoidSymbol ] };
++    key <AE10> { [                 0,        parenright, guillemotright, VoidSymbol ] };
++    key <AE11> { [             minus,        underscore,     VoidSymbol, VoidSymbol ] };
++    key <AE12> { [             equal,              plus,     VoidSymbol, VoidSymbol ] };
 +
-+    key <AD11> { [       Cyrillic_ha,       Cyrillic_HA,      braceleft ] };
-+    key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN,     braceright ] };
++    key <AD11> { [       Cyrillic_ha,       Cyrillic_HA,      braceleft, VoidSymbol ] };
++    key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN,     braceright, VoidSymbol ] };
 +
-+    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE,    bracketleft ] };
-+    key <AC11> { [        Cyrillic_e,        Cyrillic_E,   bracketright ] };
++    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE,    bracketleft, VoidSymbol ] };
++    key <AC11> { [        Cyrillic_e,        Cyrillic_E,   bracketright, VoidSymbol ] };
 +
-+    key <AB08> { [       Cyrillic_be,       Cyrillic_BE,           less ] };
-+    key <AB09> { [       Cyrillic_yu,       Cyrillic_YU,        greater ] };
-+    key <AB10> { [            period,             comma,          grave ] };
++    key <AB08> { [       Cyrillic_be,       Cyrillic_BE,           less, VoidSymbol ] };
++    key <AB09> { [       Cyrillic_yu,       Cyrillic_YU,        greater, VoidSymbol ] };
++    key <AB10> { [            period,             comma,          grave, VoidSymbol ] };
 +
-+    key <BKSL> { [             slash,         backslash,            bar ] };
-+    key <LSGT> { [             slash,         backslash,            bar ] };
++    key <BKSL> { [             slash,         backslash,            bar, VoidSymbol ] };
++    key <LSGT> { [             slash,         backslash,            bar, VoidSymbol ] };
 +
 +    include "kpdl(dot)"
 +};
