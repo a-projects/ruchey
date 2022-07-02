@@ -4,7 +4,7 @@ set -x
 set -e
 
 PACKAGE_NAME="xkb-ruchey"
-VERSION="1.2.0"
+VERSION="1.3"
 DESCRIPTION="Russian engineering keyboard layout (Ruchey)"
 MAINTAINER="Andrey Baryshkin"
 PROJECT_URL="https://github.com/A-Projects/Ruchey"
