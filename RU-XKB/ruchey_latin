@@ -1,8 +1,8 @@
 // Russian engineering Latin keyboard layout (Ручей)
 // Based on the English standard keyboard layout
 // Baryshkin Andrey <baryshkin_aa@codeblast.ru>
-// Last changes 2022/02/16
-// Version 1.2
+// Last changes 2022/07/02
+// Version 1.3
 partial alphanumeric_keys
 xkb_symbols "ruchey_latin" {
 
