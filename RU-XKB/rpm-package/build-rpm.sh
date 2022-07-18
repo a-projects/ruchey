@@ -4,7 +4,7 @@ set -x
 set -e
 
 PACKAGE_NAME="xkb-ruchey"
-VERSION="1.3"
+VERSION="1.4"
 DESCRIPTION="Russian engineering keyboard layout (Ruchey)"
 MAINTAINER="Andrey Baryshkin"
 PROJECT_URL="https://github.com/A-Projects/Ruchey"
@@ -26,7 +26,7 @@ cp -rf patches/* ~/rpmbuild/SOURCES/
 cat > ~/rpmbuild/SPECS/${PACKAGE_NAME}.spec << EOF
 Summary:        ${DESCRIPTION}
 Name:           ${PACKAGE_NAME}
-Version:        1.3
+Version:        1.4
 Release:        1
 License:        Unlicense
 URL:            https://github.com/A-Projects/Ruchey
