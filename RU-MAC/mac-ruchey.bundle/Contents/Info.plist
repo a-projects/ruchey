@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>org.sil.ukelele.keyboardlayout.ручей(ruchey)-универсальныеинженерныераскладки</string>
+	<key>CFBundleName</key>
+	<string>mac-ruchey</string>
+	<key>CFBundleVersion</key>
+	<string>1.4</string>
+	<key>KLInfo_Русская - ручей, кириллица</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<true/>
+		<key>TISInputSourceID</key>
+		<string>org.sil.ukelele.keyboardlayout.ручей(ruchey)-универсальныеинженерныераскладки.русская-ручей,кириллица</string>
+		<key>TISIntendedLanguage</key>
+		<string>ru</string>
+	</dict>
+	<key>KLInfo_Русская - ручей, латиница</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<true/>
+		<key>TISInputSourceID</key>
+		<string>org.sil.ukelele.keyboardlayout.ручей(ruchey)-универсальныеинженерныераскладки.русская-ручей,латиница</string>
+		<key>TISIntendedLanguage</key>
+		<string>en</string>
+	</dict>
+</dict>
+</plist>
