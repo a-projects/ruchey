@@ -7,7 +7,7 @@
 
 * [Установка и настройка в Linux](https://github.com/A-Projects/Ruchey/wiki/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B2-Linux)
 
-* [Установка и настройка в Mac] https://github.com/A-Projects/Ruchey/wiki/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B2-Mac
+* [Установка и настройка в Mac] (https://github.com/A-Projects/Ruchey/wiki/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B8-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%B2-Mac)
 
 # Подробности
 * Полный набор спецсимволов как в кириллической, так и в латинской раскладке
