@@ -4,7 +4,7 @@ set -x
 set -e
 
 PACKAGE_NAME="xkb-ruchey"
-VERSION="1.4"
+VERSION="1.4.1"
 DESCRIPTION="Russian engineering keyboard layout (Ruchey)"
 MAINTAINER="Andrey Baryshkin"
 PROJECT_URL="https://github.com/A-Projects/Ruchey"
@@ -93,4 +93,4 @@ chmod 555 $PACKAGE/DEBIAN/control
 chmod 775 $PACKAGE/DEBIAN/postinst
 chmod 775 $PACKAGE/DEBIAN/prerm
 
-dpkg-deb --build --root-owner-group $PACKAGE
+dpkg-deb -Zxz --build --root-owner-group $PACKAGE
