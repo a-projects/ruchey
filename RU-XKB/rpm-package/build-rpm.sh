@@ -27,7 +27,7 @@ cat > ~/rpmbuild/SPECS/${PACKAGE_NAME}.spec << EOF
 Summary:        ${DESCRIPTION}
 Name:           ${PACKAGE_NAME}
 Version:        1.4
-Release:        1
+Release:        2
 License:        Unlicense
 URL:            https://github.com/A-Projects/Ruchey
 Requires:       patch
@@ -102,15 +102,11 @@ exit
 %post
 /usr/local/share/ruchey/xkb-patch
 
-%postun
+%preun
 /usr/local/share/ruchey/xkb-unpatch
 
 %clean
 rm -rf \$RPM_BUILD_ROOT/usr/local/share/ruchey
-
-%changelog
-* Mar 13 2022 Andrey Baryshkin <${PROJECT_URL}>
-  - Build for Fedora Linux
 EOF
 
 cd ~/rpmbuild
