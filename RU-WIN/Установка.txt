@@ -1,0 +1,8 @@
+Установка Unicode варианта со всеми символами:
+RUCHEY_E\setup.exe
+RUCHEY_R\setup.exe
+
+Установка CP-1251 варианта без доп. символов, eсли испытываете 
+проблемы с приложениями не поддерживающими Unicode:
+CP1251\RUCHEY_E\setup.exe
+CP1251\RUCHEY_R\setup.exe
