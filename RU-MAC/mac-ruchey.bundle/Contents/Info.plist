@@ -7,24 +7,28 @@
 	<key>CFBundleName</key>
 	<string>mac-ruchey</string>
 	<key>CFBundleVersion</key>
-	<string>1.4</string>
-	<key>KLInfo_Русская - ручей, кириллица</key>
+	<string>2.0</string>
+	<key>KLInfo_Русская (инженерная, EN)</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<true/>
+		<key>TISIconIsTemplate</key>
+		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.ручей(ruchey)-универсальныеинженерныераскладки.русская-ручей,кириллица</string>
-		<key>TISIntendedLanguage</key>
-		<string>ru</string>
-	</dict>
-	<key>KLInfo_Русская - ручей, латиница</key>
-	<dict>
-		<key>TICapsLockLanguageSwitchCapable</key>
-		<true/>
-		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.ручей(ruchey)-универсальныеинженерныераскладки.русская-ручей,латиница</string>
+		<string>org.sil.ukelele.keyboardlayout.ручей(ruchey)-универсальныеинженерныераскладки.русская(инженерная,en)</string>
 		<key>TISIntendedLanguage</key>
 		<string>en</string>
+	</dict>
+	<key>KLInfo_Русская (инженерная, RU)</key>
+	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<true/>
+		<key>TISIconIsTemplate</key>
+		<false/>
+		<key>TISInputSourceID</key>
+		<string>org.sil.ukelele.keyboardlayout.ручей(ruchey)-универсальныеинженерныераскладки.русская(инженерная,ru)</string>
+		<key>TISIntendedLanguage</key>
+		<string>ru</string>
 	</dict>
 </dict>
 </plist>
