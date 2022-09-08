@@ -1,22 +1,22 @@
-// Russian engineering Cyrillic keyboard layout (Ручей)
+// Russian engineering keyboard layout (Ручей)
 // Based on the Russian standard keyboard layout
 // Baryshkin Andrey <baryshkin_aa@codeblast.ru>
-// Last changes 2022/07/18
-// Version 1.4
+// Last changes 2022/08/07
+// Version 2.0
 partial alphanumeric_keys
-xkb_symbols "ruchey_cyrillic" {
+xkb_symbols "ruchey_ru" {
 
-    name[Group1]= "Russian (Engineering, Cyrillic)";
+    name[Group1]= "Russian (engineering, RU)";
 
     include "ru(common)"
 
-    key <TLDE> { [ NoSymbol,   NoSymbol,          U00A7,      U0301 ] };
+    key <TLDE> { [ NoSymbol,   NoSymbol,          grave,      U0301 ] };
 
     key <AE01> { [ NoSymbol,     exclam,          U20BD, VoidSymbol ] };
-    key <AE02> { [ NoSymbol, apostrophe,             at, VoidSymbol ] };
+    key <AE02> { [ NoSymbol,   quotedbl,             at, VoidSymbol ] };
     key <AE03> { [ NoSymbol, numerosign,     numbersign, VoidSymbol ] };
     key <AE04> { [ NoSymbol,  semicolon,         dollar, VoidSymbol ] };
-    key <AE05> { [ NoSymbol,   quotedbl,        percent, VoidSymbol ] };
+    key <AE05> { [ NoSymbol,    percent,     apostrophe, VoidSymbol ] };
     key <AE06> { [ NoSymbol,      colon,    asciicircum, VoidSymbol ] };
     key <AE07> { [ NoSymbol,   question,      ampersand, VoidSymbol ] };
     key <AE08> { [ NoSymbol,   asterisk,     asciitilde, VoidSymbol ] };
@@ -31,17 +31,17 @@ xkb_symbols "ruchey_cyrillic" {
     key <AD11> { [ NoSymbol,   NoSymbol,      braceleft, VoidSymbol ] };
     key <AD12> { [ NoSymbol,   NoSymbol,     braceright, VoidSymbol ] };
 
+    key <AC02> { [ NoSymbol,   NoSymbol,          U00A7, VoidSymbol ] };
     key <AC10> { [ NoSymbol,   NoSymbol,    bracketleft, VoidSymbol ] };
     key <AC11> { [ NoSymbol,   NoSymbol,   bracketright, VoidSymbol ] };
 
     key <AB03> { [ NoSymbol,   NoSymbol,       NoSymbol,  copyright ] };
     key <AB08> { [ NoSymbol,   NoSymbol,           less, VoidSymbol ] };
     key <AB09> { [ NoSymbol,   NoSymbol,        greater, VoidSymbol ] };
-    key <AB10> { [   period,      comma,          grave, VoidSymbol ] };
+    key <AB10> { [   period,      comma,     VoidSymbol, VoidSymbol ] };
 
     key <BKSL> { [    slash,  backslash,            bar, VoidSymbol ] };
     key <LSGT> { [    slash,  backslash,            bar, VoidSymbol ] };
 
     include "kpdl(dot)"
 };
-

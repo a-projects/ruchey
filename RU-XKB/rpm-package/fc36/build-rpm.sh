@@ -3,15 +3,14 @@
 set -x
 set -e
 
-PACKAGE_NAME="xkb-ruchey"
-VERSION="1.4"
+PACKAGE_NAME="xkb-ruchey-fc36"
+VERSION="2.0"
 DESCRIPTION="Russian engineering keyboard layout (Ruchey)"
 MAINTAINER="Andrey Baryshkin"
 PROJECT_URL="https://github.com/A-Projects/Ruchey"
 
 SRC_EOF="EOF"
 PACKAGE="${PACKAGE_NAME}_${VERSION}_noarch"
-
 
 rm -rf ~/rpmbuild
 mkdir -p ~/rpmbuild
@@ -26,8 +25,8 @@ cp -rf patches/* ~/rpmbuild/SOURCES/
 cat > ~/rpmbuild/SPECS/${PACKAGE_NAME}.spec << EOF
 Summary:        ${DESCRIPTION}
 Name:           ${PACKAGE_NAME}
-Version:        1.4
-Release:        2
+Version:        2.0
+Release:        1
 License:        Unlicense
 URL:            https://github.com/A-Projects/Ruchey
 Requires:       patch
