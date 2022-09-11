@@ -3,30 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.sil.ukelele.keyboardlayout.ручей(ruchey)-универсальныеинженерныераскладки</string>
+	<string>org.sil.ukelele.keyboardlayout.mac-ruchey</string>
 	<key>CFBundleName</key>
 	<string>mac-ruchey</string>
 	<key>CFBundleVersion</key>
 	<string>2.0</string>
-	<key>KLInfo_Русская (инженерная, EN)</key>
+	<key>KLInfo_Russian (engineering, EN)</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<true/>
 		<key>TISIconIsTemplate</key>
 		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.ручей(ruchey)-универсальныеинженерныераскладки.русская(инженерная,en)</string>
+		<string>org.sil.ukelele.keyboardlayout.mac-ruchey.russian(engineering,en)</string>
 		<key>TISIntendedLanguage</key>
 		<string>en</string>
 	</dict>
-	<key>KLInfo_Русская (инженерная, RU)</key>
+	<key>KLInfo_Russian (engineering, RU)</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<true/>
 		<key>TISIconIsTemplate</key>
 		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.ручей(ruchey)-универсальныеинженерныераскладки.русская(инженерная,ru)</string>
+		<string>org.sil.ukelele.keyboardlayout.mac-ruchey.russian(engineering,ru)</string>
 		<key>TISIntendedLanguage</key>
 		<string>ru</string>
 	</dict>
