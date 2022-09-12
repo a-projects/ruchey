@@ -1,8 +1,8 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 351 on 2022-08-05 at 22:34 (GMT+3)-->
-<!--Last edited by Ukelele version 359 on 2022-09-11 at 12:07 (GMT-7)-->
-<keyboard group="126" id="-4377" name="Russian (engineering, EN)" maxout="1">
+<!--Last edited by Ukelele version 351 on 2022-09-12 at 08:02 (GMT+3)-->
+<keyboard group="126" id="-12684" name="Russian (engineering, EN)" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
         <layout first="18" last="18" mapSet="JIS" modifiers="Modifiers"/>
@@ -262,7 +262,7 @@
             <key code="7" output=""/>
             <key code="8" output=""/>
             <key code="9" output=""/>
-            <key code="10" output="§"/>
+            <key code="10" output="`"/>
             <key code="11" output=""/>
             <key code="12" output=""/>
             <key code="13" output=""/>
@@ -408,7 +408,7 @@
             <key code="47" output=""/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=""/>
-            <key code="50" output=""/>
+            <key code="50" output="́"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
             <key code="64" output="&#x0010;"/>
