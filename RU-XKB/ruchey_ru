@@ -22,7 +22,7 @@ xkb_symbols "ruchey_ru" {
     key <AE08> { [ NoSymbol,   asterisk,     asciitilde, VoidSymbol ] };
     key <AE09> { [ NoSymbol,  parenleft,  guillemotleft, VoidSymbol ] };
     key <AE10> { [ NoSymbol, parenright, guillemotright, VoidSymbol ] };
-    key <AE11> { [ NoSymbol, underscore,     VoidSymbol, VoidSymbol ] };
+    key <AE11> { [ NoSymbol, underscore,         emdash, VoidSymbol ] };
     key <AE12> { [ NoSymbol,       plus,     VoidSymbol, VoidSymbol ] };
 
     key <AD04> { [ NoSymbol,   NoSymbol,       NoSymbol, registered ] };
