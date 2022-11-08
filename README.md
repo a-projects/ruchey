@@ -19,11 +19,11 @@
 
 **Рис 1: Русская (инженерная, RU)**
 
-![RUCHEY_R](https://user-images.githubusercontent.com/38563625/189160631-ece9d802-c865-4496-9750-e2fa5ccc2887.png)
+![RUCHEY_R](https://user-images.githubusercontent.com/38563625/200638420-5bac3313-bdde-4759-8b21-57ac3076c2e3.png)
 
 **Рис 2: Русская (инженерная, EN)**
 
-![RUCHEY_E](https://user-images.githubusercontent.com/38563625/189160648-ed4d44cb-81a0-43b2-a71b-3b190fce7c90.png)
+![RUCHEY_E](https://user-images.githubusercontent.com/38563625/200638436-842f6017-2e7c-48f5-881d-b4a3f4429fa8.png)
 
 # Рекомендации
 При наборе фигурных и квадратных скобок, а так же символов меньше и больше методом "слепой печати", рекомендуется переносить кисть так, чтобы маркером являлась не клавиша "О" ("J"), а правый Alt (AltGr). Т.е. кисть смещается, как если бы была необходимость воспользоваться стрелками.
