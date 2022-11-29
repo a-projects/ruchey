@@ -2,7 +2,7 @@
 // Based on the Russian standard keyboard layout
 // Baryshkin Andrey <baryshkin_aa@codeblast.ru>
 // Last changes 2022/08/07
-// Version 2.0
+// Version 2.1
 partial alphanumeric_keys
 xkb_symbols "ruchey_ru" {
 
