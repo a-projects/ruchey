@@ -1,0 +1,13 @@
+<variant>
+  <configItem>
+    <name>ruchey_ru</name>
+    <description>Russian (engineering, RU)</description>
+  </configItem>
+</variant>
+<variant>
+  <configItem>
+    <name>ruchey_en</name>
+    <shortDescription>en</shortDescription>
+    <description>Russian (engineering, EN)</description>
+  </configItem>
+</variant>
