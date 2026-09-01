@@ -1,10 +1,10 @@
-Переключатель раскладок «Ручей» по клавише CapsLock. Переключатель работает только с раскладками a0000419 (ENG) и a0010419 (RUS).
+Переключатель раскладок «Ручей» по клавише CapsLock. Переключатель работает только с раскладками *a0000419* (ENG) и *a0010419* (RUS).
 
 ## Сборка
-go build -ldflags="-H windowsgui" -o RucheySwitcher.exe
+`go build -ldflags="-H windowsgui" -o RucheySwitcher.exe`
 
 ## Упаковка
-Compress-Archive -Path .\RucheySwitcher.exe -DestinationPath .\RucheySwitcher-v1.zip
+`Compress-Archive -Path .\RucheySwitcher.exe -DestinationPath .\RucheySwitcher-v1.zip`
 
 ## Установка
 Просто запустить исполняемый файл RucheySwitcher.exe или разместить его в "Автозагрузка"
