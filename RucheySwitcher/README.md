@@ -10,6 +10,9 @@
 Просто запустить исполняемый файл RucheySwitcher.exe или разместить его в "Автозагрузка"
 
 ## Возможности
+- `CapsLock` — переключение раскладки RUS/ENG
+- `Shift + CapsLock` — включение/выключение обычного (системного) CapsLock
+
 Можно вызвать переключение вручную:
 - `RucheySwitcher.exe eng`
 - `RucheySwitcher.exe rus`

@@ -7,6 +7,8 @@
 //     При старте CapsLock принудительно сбрасывается в off, а сами
 //     нажатия CapsLock «проглатываются», чтобы системный CapsLock
 //     больше не работал как переключатель заглавных букв.
+//     Исключение: Shift+CapsLock пропускается в систему и штатно
+//     включает/выключает реальный CapsLock.
 //   - list: показать установленные раскладки и текущую.
 //   - eng/rus: разово включить указанную раскладку.
 //   - toggle: разово переключить на противоположную раскладку.
@@ -31,6 +33,7 @@ const (
 	inputLangChangeSysCharset = 0x0001     // wParam: смена раскладки по системной таблице символов
 
 	vkCapital    = 0x14 // VK_CAPITAL — виртуальный код клавиши CapsLock
+	vkShift      = 0x10 // VK_SHIFT — виртуальный код клавиши Shift
 	whKeyboardLL = 13   // WH_KEYBOARD_LL — низкоуровневый глобальный клавиатурный хук
 	hcAction     = 0    // HC_ACTION: в nCode хука означает «событие нужно обработать»
 
@@ -66,7 +69,8 @@ var (
 	procTranslateMessage       = user32.NewProc("TranslateMessage")
 	procDispatchMessage        = user32.NewProc("DispatchMessageW")
 	procGetKeyState            = user32.NewProc("GetKeyState")
-	procKeybdEvent             = user32.NewProc("keybd_event") // имитация нажатия клавиши
+	procGetAsyncKeyState       = user32.NewProc("GetAsyncKeyState") // физическое состояние клавиш-модификаторов
+	procKeybdEvent             = user32.NewProc("keybd_event")      // имитация нажатия клавиши
 )
 
 // layout — целевая раскладка: имя для вывода и идентификатор из реестра
@@ -205,6 +209,14 @@ func capsState() bool {
 	return r&1 == 1
 }
 
+// shiftIsDown — физически ли удержана любая из клавиш Shift
+// (старший бит GetAsyncKeyState). Вызывается из хука, поэтому
+// нужен именно асинхронный запрос, не зависящий от очереди сообщений.
+func shiftIsDown() bool {
+	r, _, _ := procGetAsyncKeyState.Call(vkShift)
+	return r&0x8000 != 0
+}
+
 // setCapsOff принудительно выключает CapsLock: если он включён,
 // имитируем нажатие/отпускание клавиши через keybd_event.
 // Вызывается при старте, до установки хука.
@@ -237,6 +249,11 @@ func hookProc(nCode int32, wParam uintptr, lParam unsafe.Pointer) uintptr {
 		// иначе будем реагировать на собственные имитации и чужие инструменты.
 		// В тестовом режиме (KS_TEST=1) обрабатываем и их.
 		if k.flags&llkhfInjected != 0 && !testMode {
+			break
+		}
+		// Shift+CapsLock пропускаем в систему: Windows сама включает/выключает
+		// реальный CapsLock. Ни нажатие, ни отпускание не проглатываем.
+		if shiftIsDown() {
 			break
 		}
 		// lastDown фильтрует автоповтор при удержании клавиши.
